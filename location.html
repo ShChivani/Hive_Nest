@@ -4,11 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Search PG & Rental Homes</title>
-    <link rel="stylesheet" href="style.css">
-    <script async
-  src="https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_MAPS_API_KEY&libraries=places&callback=initMap">
-</script>
-    <script src="./script.js" defer></script>
+    <link rel="stylesheet" href="./style.css">
+    
+    
 </head>
 <body>
 
@@ -23,14 +21,21 @@
         </nav>
     </header>
 
-    <main>
-        <div class="search-container">
-            <input type="text" id="location-search" placeholder="Enter a location..." />
-            <button onclick="searchLocation()">Search</button>
-        </div>
-        <div id="map" style="height: 500px; width: 100%;"></div>
-
-    </main>
+    <input
+        id="pac-input"
+        class="controls"
+        type="text"
+        placeholder="Search Box"
+      />
+      <div id="map"></div>
+      <script src="./script.js" defer></script>
+      <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBqjiWpIe85JE9eshkrcoMz4DqFknSXtik&libraries=places&callback=initAutocomplete"
+      async
+      defer
+    ></script>
+    
+ 
 
 </body>
 </html>
