@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search PG & Rental Homes</title>
+    <link rel="stylesheet" href="style.css">
+    <script async
+  src="https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_MAPS_API_KEY&libraries=places&callback=initMap">
+</script>
+    <script src="./script.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <h1>Find PG & Rental Homes</h1>
+        <nav>
+            <ul>
+                <li><a href="./home.html">Home</a></li>
+                <li><a href="./contact.html">Contact Us</a></li>
+                <li><a href="./types.html">Room Types</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="search-container">
+            <input type="text" id="location-search" placeholder="Enter a location..." />
+            <button onclick="searchLocation()">Search</button>
+        </div>
+        <div id="map" style="height: 500px; width: 100%;"></div>
+
+    </main>
+
+</body>
+</html>

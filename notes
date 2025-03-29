@@ -1,0 +1,19 @@
+Create a multi-page website with the following features:
+
+Home Page: Lists and links to all sections (Contact Us, Room Types, Location, and Rent Filter). Includes images and navigation to other pages.
+
+Contact Us Page: A form where users can enter their name, email, mobile number, and query. The form should be properly styled and validated.
+
+Room Types Page:
+
+Two main categories: Boys and Girls
+
+Each category has two subcategories: PG and Rental Room
+
+Further subtypes for each: Single Seater, Double Seater, Sharing, and Triple Seater
+
+Location Search Page: Integrate Google Maps where users can search for PGs and rental homes.
+
+Rent Filter Page: Allows users to filter rooms based on price, ranging from ₹3,000 to ₹15,000.
+
+
