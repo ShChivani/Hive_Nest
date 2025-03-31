@@ -1,0 +1,97 @@
+body {
+    height: cover;
+    width: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('https://th.bing.com/th/id/OIP.ETQpUS3wKll91XlggYSEJQHaE8?rs=1&pid=ImgDetMain');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #324d62f8;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.logo {
+    width: 150px; /* Adjust width as needed */
+    height: 50px;
+    background-image: url('https://tse2.mm.bing.net/th?id=OIG3.qVZJa4Z3crih2Yg6YM5Y&pid=ImgGn'); /* Path to your logo */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    
+}
+
+.container {
+    margin-top: 80px;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+input, textarea, button {
+    width: 100%;
+    margin: 10px 0;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #481754;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+
+button:hover {
+    background-color: #518d91;
+}
+
+.output {
+    margin-top: 20px;
+    padding: 10px;
+    background: #f4f4f4;
+    border-radius: 5px;
+    text-align: left;
+}

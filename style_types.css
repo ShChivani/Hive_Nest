@@ -1,0 +1,154 @@
+******************************************************/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('https://th.bing.com/th/id/R.7949918e964ecf7fb2a92ffec04c113d?rik=WKUEfx3mT9k3BQ&riu=http%3a%2f%2fcache.marriott.com%2fmarriottassets%2fmarriott%2fLASJW%2flasjw-suite-0084-hor-clsc.jpg%3finterpolation%3dprogressive-bilinear%26&ehk=oDRvnHGdTO5SUJmvUoxsmYCSFG%2beW%2fXXnw35tcAIjRw%3d&risl=&pid=ImgRaw&r=0');
+}
+
+/* Header Navigation Styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #727098;
+    color: white;
+    flex-wrap: wrap;
+}
+.logo {
+  width: 150px; /* Adjust width as needed */
+  height: 50px;
+  background-image: url('https://tse2.mm.bing.net/th?id=OIG3.qVZJa4Z3crih2Yg6YM5Y&pid=ImgGn'); /* Path to your logo */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Search and Filter Section */
+.search-filter-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.search-filter-container input,
+.search-filter-container button {
+    margin: 5px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.search-filter-container button {
+    background-color: #28a745;
+    color: white;
+    cursor: pointer;
+}
+
+.search-filter-container button:hover {
+    background-color: #218838;
+}
+
+/* Main Content */
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+/* Room Sections */
+.room-section {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    margin: 15px 0;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.room-section img {
+    width: 200px;
+    height: 150px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.room-info {
+    flex-grow: 1;
+}
+
+.room-info h3 {
+    margin: 0;
+    color: #333;
+    font-size: 20px;
+}
+
+.room-info p {
+    margin: 5px 0;
+    font-size: 16px;
+    color: #555;
+}
+
+/* Location Icon */
+.location-icon {
+    width: 18px !important;   /* Forces the new size */
+    height: 18px !important;
+    cursor: pointer;
+    display: inline-block;
+    object-fit: contain;   /* Ensures it doesn’t stretch */
+}
+
+.location-icon:hover {
+    transform: scale(1.1);  /* Slight hover effect */
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .room-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .room-section img {
+        margin: 0 auto 10px auto;
+    }
+}

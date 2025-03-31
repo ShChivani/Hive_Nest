@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PG & Room Rental</title>
+    <link rel="stylesheet" href="./style_PO.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo"></div>
+        <ul class="nav-links">
+          <li><a href="./home.html">Home</a></li>
+          <li><a href="./type.html">Room Types</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="container">
+      <h2>Register & Upload Property Details</h2>
+      <select id="userType">
+        <option value="seeker">Room Seeker</option>
+        <option value="owner">Property Owner</option>
+      </select>
+      <input type="file" id="imageUpload" accept="image/*" />
+      <img id="preview" alt="Image Preview" />
+      <input
+        type="text"
+        id="roomType"
+        placeholder="Room Type (Single, Double, Shared, etc.)"
+      />
+      <input
+        type="number"
+        id="budget"
+        placeholder="Budget (in INR)"
+        min="1000"
+      />
+      <select id="genderPreference">
+        <option value="Boys">Only Boys</option>
+        <option value="Girls">Only Girls</option>
+        <option value="Both">Both</option>
+      </select>
+      <input type="text" id="contact" placeholder="Name" />
+      <input type="tel" id="phone" placeholder="Phone Number" />
+      <textarea id="location" placeholder="Location"></textarea>
+      <button onclick="submitForm()">Submit</button>
+      <button onclick="openGoogleMaps()">Open Location in Google Maps</button>
+      <div id="output" class="output" style="display: none"></div>
+    </div>
+
+    <main>
+      <h2>Available Rooms</h2>
+      <div class="room-section" id="room-list">
+        <!-- Uploaded room details will be displayed here dynamically -->
+      </div>
+    </main>
+
+    <script src="./script_PO.js"></script>
+  </body>
+</html>

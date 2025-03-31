@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Room Seeker Registration</title>
+    <link rel="stylesheet" href="./Style_RS.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="./home.html">Home</a></li>
+                <li><a href="./type.html">Room Types</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>Room Seeker Registration</h2>
+        
+        <input type="text" id="seekerRoomType" placeholder="Preferred Room Type (Single, Double, Shared, etc.)">
+        <input type="number" id="seekerBudget" placeholder="Budget (in INR)" min="1000">
+        <input type="text" id="seekerName" placeholder="Your Name">
+        <input type="tel" id="seekerPhone" placeholder="Your Phone Number">
+        <textarea id="seekerLocation" placeholder="Preferred Location"></textarea>
+
+        <button onclick="submitSeekerForm()">Submit</button>
+        <button onclick="openGoogleMaps()">Open Location in Google Maps</button>
+
+        <div id="output" class="output" style="display: none;"></div>
+
+        <p>Are you a Property Owner? <a href="property_owner.html">Click here</a> to register.</p>
+    </div>
+
+    <script src="./script_RS.js"></script>
+</body>
+</html>
